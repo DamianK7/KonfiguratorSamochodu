@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sedan">#D5BF95</color>
+    <color name="suv">#DEDAC9</color>
+    <color name="hatchback">#C6CFC3</color>
+</resources>

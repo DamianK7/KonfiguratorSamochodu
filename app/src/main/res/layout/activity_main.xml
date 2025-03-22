@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A92F2D"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz typ nadwozia"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/rodzajNadwoziaRG"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            >
+            <RadioButton
+                android:id="@+id/sedan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedan"
+                />
+            <RadioButton
+                android:id="@+id/suv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suv"
+                />
+            <RadioButton
+                android:id="@+id/hatchback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hatchback"
+                />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageViewAuto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sedan"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A92F2D"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz opcje wyposażenia:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <CheckBox
+            android:id="@+id/checkKlima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klimatyzacja"
+            android:layout_margin="10dp"
+            >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkSiedzenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skórzane siedzenia"
+            android:layout_margin="10dp"
+            >
+        </CheckBox>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zamowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Złóż zamówienie"
+        android:layout_margin="10dp"
+        android:backgroundTint="#A92F2D"
+        >
+    </Button>
+
+</LinearLayout>
